@@ -34,7 +34,7 @@ function Login({ setUser }) {
 
     try {
       // Use axios to validate phone and password with the backend
-      const response = await axios.post('http://16.170.215.115:1014/api/auth/login', {
+      const response = await axios.post('http://localhost:1014/api/auth/login', {
         mobile: phone,
         password,
       });
